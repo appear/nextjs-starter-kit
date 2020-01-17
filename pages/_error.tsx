@@ -1,5 +1,5 @@
-import React from "react";
-import Router from "next/router";
+import React from 'react'
+import Router from 'next/router'
 
 function Error() {
   return (
@@ -7,7 +7,7 @@ function Error() {
       Error Page
       <button onClick={() => Router.back()}>돌아가기</button>
     </div>
-  );
+  )
 }
 
-export default Error;
+export default Error

@@ -1,9 +1,9 @@
-import React from "react";
-import { AppContext, AppProps } from "next/app";
-import Head from "next/head";
+import React from 'react'
+import { AppContext, AppProps } from 'next/app'
+import Head from 'next/head'
 
 interface MyAppProps extends AppProps {
-  pageProps: any;
+  pageProps: any
 }
 
 function MyApp({ pageProps, Component }: MyAppProps) {
@@ -24,15 +24,15 @@ function MyApp({ pageProps, Component }: MyAppProps) {
 
       <Component {...pageProps} />
     </>
-  );
+  )
 }
 
 MyApp.getInitialProps = async ({ Component, ctx }: AppContext) => {
   const pageProps = Component.getInitialProps
     ? await Component.getInitialProps(ctx)
-    : {};
+    : {}
 
-  return { pageProps };
-};
+  return { pageProps }
+}
 
-export default MyApp;
+export default MyApp
