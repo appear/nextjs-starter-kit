@@ -1,5 +1,5 @@
 import React from "react";
-import App, { AppContext, AppProps } from "next/app";
+import { AppContext, AppProps } from "next/app";
 import Head from "next/head";
 
 interface MyAppProps extends AppProps {
