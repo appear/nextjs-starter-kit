@@ -7,7 +7,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "prettier": "prettier --write \"**/*.{js,json,ts,tsx}\""
+    "prettier": "prettier --write \"**/*.{js,json,ts,tsx}\"",
+    "lint": "eslint '**/*.{js,ts,tsx}'"
   },
   "repository": {
     "type": "git",
@@ -31,7 +32,20 @@
     "@types/react": "^16.9.17",
     "@types/styled-components": "^4.4.2",
     "babel-plugin-styled-components": "^1.10.6",
+    "husky": "^4.0.10",
+    "lint-staged": "^9.5.0",
     "prettier": "^1.19.1",
     "typescript": "^3.7.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "**/*.{js,ts,tsx}": [
+      "npm run lint",
+      "git add"
+    ]
   }
 }
