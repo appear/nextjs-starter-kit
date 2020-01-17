@@ -1,0 +1,32 @@
+{
+  "name": "nextjs-starter",
+  "version": "1.0.0",
+  "description": "- Next@9 - Styled-Components@4 - Typscript  - Context API",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appear/nextjs-starter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/appear/nextjs-starter/issues"
+  },
+  "homepage": "https://github.com/appear/nextjs-starter#readme",
+  "dependencies": {
+    "next": "^9.2.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.1.7",
+    "@types/react": "^16.9.17",
+    "typescript": "^3.7.5"
+  }
+}
