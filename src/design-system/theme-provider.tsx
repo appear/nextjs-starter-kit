@@ -3,11 +3,11 @@ import { ThemeProvider as BaseThemeProvider } from 'styled-components'
 import baseTheme from './theme/base'
 
 interface ThemeProviderProps {
-  chilren: React.ReactNode
+  children: React.ReactNode
 }
 
-function ThemeProvider({ chilren }: ThemeProviderProps) {
-  return <BaseThemeProvider theme={baseTheme}>{chilren}</BaseThemeProvider>
+function ThemeProvider({ children }: ThemeProviderProps) {
+  return <BaseThemeProvider theme={baseTheme}>{children}</BaseThemeProvider>
 }
 
 export default ThemeProvider

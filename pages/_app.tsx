@@ -2,6 +2,8 @@ import React from 'react'
 import { AppContext, AppProps } from 'next/app'
 import Head from 'next/head'
 
+import { ThemeProvider } from '../src/design-system'
+
 interface MyAppProps extends AppProps {
   pageProps: any
 }
@@ -21,8 +23,9 @@ function MyApp({ pageProps, Component }: MyAppProps) {
         <meta property="og:description" content="Next JS - Starter Kit" />
         <title>Next JS - Starter Kit</title>
       </Head>
-
-      <Component {...pageProps} />
+      <ThemeProvider>
+        <Component {...pageProps} />
+      </ThemeProvider>
     </>
   )
 }

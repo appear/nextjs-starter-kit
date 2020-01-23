@@ -9,12 +9,8 @@ export default {
   colors: {
     white: `rgba(${Color.white})`,
     black: `rgba(${Color.gray}, 1)`,
-    gray: {
-      gray100: `rgba(${Color.gray}, 0.1)`,
-    },
-    red: {
-      red100: `rgba(${Color.red}, 0.1)`,
-      red1000: `rgba(${Color.red}, 1)`,
-    },
+    gray100: `rgba(${Color.gray}, 0.1)`,
+    red100: `rgba(${Color.red}, 0.1)`,
+    red1000: `rgba(${Color.red}, 1)`,
   },
 }
