@@ -7,6 +7,7 @@ import Document, {
   DocumentProps,
 } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
+import { GlobalStyle } from '../src/design-system'
 
 interface MyDocumentProps extends DocumentProps {
   styleTags?: string
@@ -20,6 +21,7 @@ export default class MyDocument extends Document<MyDocumentProps> {
     const page = ctx.renderPage((App) => (props) =>
       sheet.collectStyles(
         <>
+          <GlobalStyle />
           <App {...props} />
         </>,
       ),
