@@ -8,7 +8,9 @@
     "@storybook/addon-links": "^5.3.8",
     "@storybook/addons": "^5.3.8",
     "@storybook/react": "^5.3.8",
-    "babel-loader": "^8.0.6"
+    "babel-loader": "^8.0.6",
+    "babel-preset-react-app": "^9.1.0",
+    "react-docgen-typescript-loader": "^3.6.0"
   },
   "scripts": {
     "docs": "start-storybook -p 6006",
