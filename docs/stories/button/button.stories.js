@@ -1,20 +1,16 @@
 import React from 'react'
-import { action } from '@storybook/addon-actions'
+import { withKnobs } from '@storybook/addon-knobs'
 import { Button } from '@storybook/react/demo'
+import mdx from './button.stories.mdx'
 
 export default {
-  title: 'Button',
-  component: Button,
+  title: 'button', // 스토리북에서 보여질 그룹과 경로를 명시
+  component: Button, // 어떤 컴포넌트를 문서화 할지 명시
+  decorators: [withKnobs], // 애드온 적용
+  parameters: {
+    componentSubtitle: '버튼 컴포넌트',
+    docs: {
+      page: mdx,
+    },
+  },
 }
-
-export const Text = () => (
-  <Button onClick={action('clicked')}>Hello Button</Button>
-)
-
-export const Emoji = () => (
-  <Button onClick={action('clicked')}>
-    <span role="img" aria-label="so cool">
-      😀 😎 👍 💯
-    </span>
-  </Button>
-)
