@@ -3,12 +3,13 @@ import {
   marginMixin,
   paddingMixin,
   formatMarginPadding,
-} from '../mixins/margin-padding'
+} from '../../mixins/margin-padding'
 
 interface ContainerProps {
   display?: string
   centered?: boolean
   bg?: string
+  theme: string
 }
 
 const Container = styled.div<ContainerProps>`
