@@ -5,14 +5,13 @@ import {
   formatMarginPadding,
 } from '../../mixins/margin-padding'
 
-interface ContainerProps {
+type ContainerProps = {
   display?: string
   centered?: boolean
   bg?: string
-  theme: string
 }
 
-const Container = styled.div<ContainerProps>`
+export const Container = styled.div<ContainerProps>`
   ${marginMixin}
   ${paddingMixin}
 
@@ -32,5 +31,3 @@ const Container = styled.div<ContainerProps>`
       background-color: ${theme.colors[bg]};
     `}  
 `
-
-export default Container
