@@ -16,21 +16,25 @@
     "type": "git",
     "url": "git+https://github.com/appear/nextjs-starter.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "next",
+    "nextjs",
+    "nextjs-starter-kit"
+  ],
+  "author": "olaf",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/appear/nextjs-starter/issues"
   },
   "homepage": "https://github.com/appear/nextjs-starter#readme",
   "dependencies": {
-    "csstype": "^2.6.8",
-    "next": "^9.2.0",
+    "next": "^9.4.4",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "styled-components": "^5.0.0"
   },
   "devDependencies": {
+    "csstype": "^2.6.8",
     "@babel/core": "^7.8.3",
     "@storybook/addon-actions": "^5.3.8",
     "@storybook/addon-docs": "^5.3.8",
@@ -56,10 +60,10 @@
     "eslint-plugin-react-hooks": "^2.3.0",
     "eslint-plugin-standard": "^4.0.1",
     "husky": "^4.0.10",
-    "lint-staged": "^9.5.0",
-    "prettier": "^1.19.1",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
     "react-docgen-typescript-loader": "^3.6.0",
-    "typescript": "^3.7.5"
+    "typescript": "^3.9.5"
   },
   "husky": {
     "hooks": {
@@ -68,9 +72,7 @@
   },
   "lint-staged": {
     "**/*.{js,ts,tsx}": [
-      "npm run prettier",
-      "npm run lint",
-      "git add"
+      "npm run lint"
     ]
   }
 }

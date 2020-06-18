@@ -16,3 +16,7 @@ export default {
 }
 
 export const basic = () => <Container>Basic Container</Container>
+
+basic.story = {
+  name: '기본 컨테이너',
+}
